@@ -3,14 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.conf.json",
+    "start": "ng serve --proxy-config proxy.conf.json --configuration defaultConfig",
+    "start:deepak": "ng serve --proxy-config proxy.conf.json --configuration deepakConfig",
     "build": "ng build",
+    "build:deepak": "ng build --configuration deepakConfig",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/deepakjha14/whitelable-multitheme.git"
   },
   "private": true,
   "dependencies": {

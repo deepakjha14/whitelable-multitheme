@@ -55,6 +55,46 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "defaultConfig": {
+              "styles": [
+                "@angular/material/prebuilt-themes/deeppurple-amber.css",
+                "src/styles.scss"
+              ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "src/styles/brand-default"
+                ]
+              },
+              "assets": [
+                "src/favicon.ico",
+                "src/assets",
+                {
+                  "glob": "**/*",
+                  "input": "src/styles/brand-default",
+                  "output": "/assets"
+                }
+              ]
+            },
+            "deepakConfig": {
+              "styles": [
+                "@angular/material/prebuilt-themes/deeppurple-amber.css",
+                "src/styles.scss"
+              ],
+              "stylePreprocessorOptions": {
+                "includePaths": [
+                  "src/styles/brand-deepak"
+                ]
+              },
+              "assets": [
+                "src/favicon.ico",
+                "src/assets",
+                {
+                  "glob": "**/*",
+                  "input": "src/styles/brand-deepak",
+                  "output": "/assets"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -67,6 +107,12 @@
             },
             "development": {
               "buildTarget": "students-entry:build:development"
+            },
+            "defaultConfig": {
+              "buildTarget": "students-entry:build:defaultConfig"
+            },
+            "deepakConfig": {
+              "buildTarget": "students-entry:build:deepakConfig"
             }
           },
           "defaultConfiguration": "development"
